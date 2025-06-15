@@ -1,0 +1,42 @@
+# Data files
+/data/
+*.csv
+*.xlsx
+*.parquet
+*.feather
+*.h5
+*.db
+
+# DVC
+.dvc/
+*.dvc
+.dvc/cache/
+.dvc/tmp/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports
+/reports/
+
+# Logs
+*.log 
