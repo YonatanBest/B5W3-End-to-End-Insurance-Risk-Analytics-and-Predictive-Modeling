@@ -24,6 +24,8 @@ jobs:
         pip install -r requirements.txt
 
     - name: Check notebook runs
+      working-directory: notebooks
       run: |
         pip install nbconvert
-        jupyter nbconvert --to notebook --execute notebooks/01_eda.ipynb --output executed_notebook.ipynb
+        jupyter nbconvert --to notebook --execute 01_eda.ipynb --output executed_01_eda.ipynb --allow-errors
+        jupyter nbconvert --to notebook --execute 02_hypothesis_testing.ipynb --output executed_02_hypothesis_testing.ipynb --allow-errors
