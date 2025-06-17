@@ -6,13 +6,9 @@
 *.feather
 *.h5
 *.db
-
-# DVC
-.dvc/
-*.dvc
-.dvc/cache/
-.dvc/tmp/
-
+#dvc
+/data/*
+!/data/*.dvc
 # Jupyter Notebooks
 .ipynb_checkpoints/
 
